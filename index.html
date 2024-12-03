@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal's website</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: #fff;
+        background-image: url(https://wallpaperaccess.com/full/260164.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    nav {
+        background-color: #0044ffd8;
+    }
+
+    .topbar {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        padding: 1em;
+        flex-wrap: wrap;
+    }
+
+    /* nav2 */
+    .nav2 {
+        background-color: #0044ffd8;
+    }
+
+    li {
+        transition: 1.6s;
+        cursor: pointer;
+    }
+
+    li:hover {
+        color: silver;
+    }
+
+    /* Form */
+    .ddd {
+        margin: 3em 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        width: 90%;
+        max-width: 40em;
+        padding: 1.5em;
+        margin: 0.5em;
+    }
+
+    /* buttons */
+    button {
+        cursor: pointer;
+        border: none;
+        padding: 0.8em 1.2em;
+        margin: 0.5em;
+        border-radius: 8px;
+        font-size: 1em;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    /* Footer */
+    .list {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+    .address {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ffd {
+        list-style-type: none;
+    }
+
+    .cop {
+        padding: 2em 1em;
+        gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        background-color: #0044ffd8;
+        width: 100%;
+        display: flex;
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    /* Media Queries */
+    @media (max-width: 1024px) {
+        .topbar {
+            gap: 1em;
+        }
+
+        input {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .ddd {
+            margin: 2em 0.5em;
+        }
+
+        .cop {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 14px;
+        }
+
+        nav, .nav2 {
+            text-align: center;
+        }
+
+        input {
+            width: 95%;
+        }
+
+        footer {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+
+
+<body>
+    <!-- 1 -->
+    <nav>
+        <ul class="topbar">
+            <li><a>Home</a></li>
+            <li><a>G-Suite Login</a></li>
+            <li><a>StaffLogin</a></li>
+            <li><a>Student Login</a></li>
+            <li><a>Notice Board</a></li>
+            <li><a>Student Clubs</a></li>
+            <li><a>Pre-Registration</a></li>
+            <li><a>Image Gallery</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a style="text-decoration: none; color: red; box-shadow: red 2px 2px 10px 2px; border-radius: 50px; padding: 4px;" href="https://www.instagram.com/kunal.tsx/?next=%2F">Logout</a></li>
+        </ul>
+    </nav>
+    <!-- 2 -->
+    <img style="background-color: #fff; width: 100%;" src="https://www.polygwalior.ac.in/mono3.jpg" />
+    <!-- 3 -->
+    <div class="nav2">
+        <ul class="topbar">
+            <li>About us</li>
+            <li>Academics</li>
+            <li>Student</li>
+            <li>EMD Cell</li>
+            <li>Feedback</li>
+            <li>Alumni</li>
+            <li>Placements</li>
+            <li>Free Resources</li>
+        </ul>
+    </div>
+    <!--4-->
+    <div class="ddd">
+        <audio autoplay loop>
+            <source src="holiday_movie_bgm.mp3" type="audio/mpeg">
+        </audio>
+
+        <form action="/submit-form" method="POST">
+
+            <label for="rol">Roll No .</label>
+            <input type="text" id="rol" placeholder="Roll Number">
+            <br>
+            <label for="pssword">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <!-- there is 3 buttons > Login , change password, Guest login -->
+            <div class="btn">
+
+                <button type="submit" style="background-color:rgb(74, 74, 221);">Login</button><br>
+                <button type="reset" style="background-color: rgb(73, 218, 73);">Click to Change YourSelf</button>
+                <br>
+                <button style="
+             background-color: cyan;
+             ">Guest Login</button>
+            </div>
+        </form>
+    </div>
+    <!-- 5 -->
+    <footer>
+        <!-- Copyright etc. -->
+        <div class="cop">
+            <ul style="list-style: none;">
+                <li>Last Updated at: 16-May-IDK 12:00:00 AM</li>
+                <li>Copyright © 2018 All Rights Reserved</li>
+            </ul>
+
+
+            <!-- addresss etc. -->
+
+            <ul class="ffd">
+                <a style="text-decoration: none;" href="https://maps.app.goo.gl/VX2iWTD8nQGqFHVGA" target="_blank">
+
+                    <label>
+                        <span style="color: blue;">G</span>
+                        <span style=" color:yellow;">o</span>
+                        <span style="color: red;">o</span>
+                        <span style="color: blue;">g</span>
+                        <span style="color: green;">l</span>
+                        <span style=" color: red;">e</span>
+                        <span style="color: #000;">Map</span>
+
+
+                    </label>
+                    <br>
+                    <img src="poly.png" style="border: #000 1px solid;" width="300px" alt="map" />
+                </a>
+                <li><a style="text-decoration:none; color:#fff;" href="#">IN 1234567890</a></li>
+                <br>
+                <li><a style="text-decoration:none; color:#fff;" href="#">kunalshakywar55@gmail.com</a></li>
+            </ul>
+
+
+            <!-- online govt.list -->
+            <ul style="cursor: pointer;" class="ffd">
+                <strong>IMPORTENT LINKS</strong>
+                <li>MP online</li>
+                <li>India = Bharat</li>
+                <li>Sab dost hai</li>
+                <li>Kal se college</li>
+                <li>Baba yaga</li>
+                <li>ram ram bhai</li>
+                <li>13 bhi katega</li>
+                <li>What is HTML</li>
+            </ul>
+
+
+        </div>
+
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
